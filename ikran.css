@@ -1,0 +1,194 @@
+
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: "josefin sans", sans-serif;
+    box-sizing: border-box;
+    animation-name: hero;
+    animation-duration: (0.1);
+  }
+  .hero {
+  
+    height: 100vh;
+    width: 100%;
+   
+    background-position-x: 10%;
+    background-image: url("../ikran/imag/gift1.png");
+    background-size:cover;
+   background-position:center;
+   background-repeat: no-repeat;
+    transition: 10s;
+    animation-name: animate;
+  
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+ 
+  }
+  @keyframes animate {
+    25% {
+      background-image: url(../ikran/imag/dool1.jpg);
+    }
+    50% {
+      background-image: url(../ikran/imag/dool2.jpg);
+    }
+    60% {
+      background-image: url(../ikran/imag/dool3.jpg);
+    }
+    75% {
+      background-image: url(../ikran/imag/dool4.jpg);
+    }
+    100% {
+      background-image: url(../ikran/imag/dool5.jpg);
+    }
+  
+  
+  }
+
+  .hero h1{
+    padding-top: 1%;
+   
+    background-color: white;
+    color: black;
+  }
+  .hero h1 span{
+    background-color: white;
+    color:red
+    
+  }
+
+.ballon{
+
+    
+    animation-name:bal;
+    animation-duration: 5s;
+   
+  animation-iteration-count: 100000000;
+
+display: flex;
+white-space: 1px;
+}
+@keyframes bal {
+    from {
+        transform: translateY(-150%);
+      
+    
+    }
+    to {
+        transform: translateX(0%);
+    }
+  }
+
+  .balloon{
+	height: 60px;
+	width: 55px;
+	background-color: crimson;
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	border-radius: 50%;
+    animation: move 2s ease-in infinite;
+}
+.balloon:before{
+	content: "";
+	height: 60px;
+	width: 6px;
+	position: absolute;
+	background-color: white;
+	top: 93%;
+left: 40%;
+
+}
+@keyframes move{
+	0%{
+		top: 100%;
+	}
+	100%{
+		top: 0%;
+	}
+}
+.balloon:nth-child(2){
+	left: 20%;
+	top: 40%;
+	background-color: yellow;
+	animation-duration: 3s;
+}
+.balloon:nth-child(3){
+	left: 30%;
+	top: 40%;
+	background-color: lightpink;
+	animation-duration: 4s;
+}
+
+.balloon:nth-child(4){
+	left: 40%;
+	top: 40%;
+	background-color: crimson;
+	animation-duration: 5s;
+}
+
+.balloon:nth-child(5){
+	left: 50%;
+	top: 40%;
+	background-color: gray;
+	animation-duration: 6s;
+}
+
+.balloon:nth-child(6){
+	left: 60%;
+	top: 40%;
+	background-color: orange;
+	animation-duration: 2s;
+}
+.balloon:nth-child(7){
+	left: 70%;
+	top: 40%;
+	background-color: yellow;
+	animation-duration: 7s;
+}
+
+.balloon:nth-child(8){
+	left: 80%;
+	top: 40%;
+	background-color: blue;
+	animation-duration: 3s;
+}
+.balloon:nth-child(9){
+	left: 90%;
+	top: 40%;
+	background-color: crimson;
+	animation-duration: 4s;
+}
+h2{
+	font-size: 30px;
+	color: white;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	font-family: cursive;
+	transform: translate(-30%,-50%);
+}
+ .wish h4 {
+    color: black;
+    letter-spacing: 1px;
+    line-height: 10px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 20%;
+    animation-name: p;
+    animation-duration: 10s;
+    animation-iteration-count: 100000000;
+
+  }
+  @keyframes p {
+    from {
+      transform: scale(0%);
+    }
+    to {
+      transform: scale(100%);
+    }
+  }
